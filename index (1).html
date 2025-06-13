@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ядерный Симулятор - Бета 2</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  <div id="map" style="width: 100%; height: 90vh;"></div>
+  <div id="controls">
+    <button id="launchBtn">Запустить ракету</button>
+    <select id="targetSelect">
+      <option value="55.7558,37.6176">Москва</option>
+      <option value="38.9072,-77.0369" selected>Вашингтон</option>
+      <option value="51.5074,-0.1278">Лондон</option>
+      <option value="35.6895,139.6917">Токио</option>
+    </select>
+    <div id="status">Статус: Ожидание запуска</div>
+    <div id="reaction"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
